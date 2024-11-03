@@ -1,17 +1,21 @@
 {
-  "name": "cluster-sqs-consumer",
+  "name": "node-cluster-sqs-consumer",
   "version": "1.0.0",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["sqs", "consumer", "node", "cluster", "aws", "queue", "worker"],
+  "keywords": ["sqs", "consumer", "poll", "node", "cluster", "worker"],
   "author": "Kruthi Shiva Kumar",
   "license": "ISC",
-  "description": "This package is designed specifically for node.js projects that are utilizing cluster mode and want to consume SQS messages within all the worker processes. It makes use of inter-process-communication, where the master process continously polls for messages from SQS and passes the messages on to all worker processess whenever available.",
+  "description": "This package is designed specifically for node.js projects that are utilizing cluster mode and want to consume SQS messages within all the worker processes.",
   "dependencies": {
     "@aws-sdk/client-sqs": "^3.670.0"
   },
   "devDependencies": {
     "@types/node": "^22.7.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kruthis123/node-cluster-sqs-consumer.git"
   }
 }
