@@ -1,6 +1,6 @@
 # SQSConsumer for node services running in cluster mode
 
-This package provides a simple wrapper around AWS SDK's SQS client, allowing to easily consume messages from an Amazon SQS (Simple Queue Service) queue. This package is designed specifically for node.js projects that are utilizing cluster mode and want to consume SQS messages within all the worker processes. It makes use of inter-process-communication, where the master process continously polls for messages from SQS and passes the messages on to all worker processess whenever available. Since SQS is primarily designed to work with a single consumer, without inter-process-communication, each worker process would have to poll a separate queue with same messages replicated across all the queues.
+This package provides a simple wrapper around AWS SDK's SQS client, allowing to easily consume messages from an Amazon SQS (Simple Queue Service) queue. This package is designed specifically for node.js projects that are utilizing cluster mode and want to consume SQS messages within all the worker processes. It makes use of inter-process-communication, where the master process continuously polls for messages from SQS and passes the messages on to all worker processess whenever available. Since SQS is primarily designed to work with a single consumer, without inter-process-communication, each worker process would have to poll a separate queue with same messages replicated across all the queues.
 
 ## Installation
 
